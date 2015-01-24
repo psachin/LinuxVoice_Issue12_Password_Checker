@@ -5,7 +5,7 @@ def pword():
     global lower
     global upper
     global integer
-    password = eg.enterbox(msg="Please enter your password")
+    password = eg.passwordbox(msg="Please enter your password")
     length = len(password)
     print(length)
     lower = sum([int(c.islower()) for c in password])
