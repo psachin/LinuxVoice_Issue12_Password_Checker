@@ -35,12 +35,14 @@ def strength():
         eg.msgbox(msg="Please try adding a number")
     else:
         eg.msgbox(msg="Strength Assessed - Your password is ok")
+
 while True:
     pword()
     length()
     strength()
-    answer = eg.choicebox(title="Try again?", msg="Would you like to try again?", choices=("Yes","No"))
-    if answer != "Yes":
+    answer = eg.ynbox(title="Try again?",
+                      msg="Would you like to try again?")
+    if answer is False:
         break
 
 
